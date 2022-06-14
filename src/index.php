@@ -3,7 +3,7 @@
     //task 1
 
     $a = 19;
-    $b = 19;
+    $b = -5;
     $c = -3;
 
     if ($a >= $b && $a >= $c){
@@ -20,8 +20,12 @@
 
     if ($a == $b || $a == $c || $b == $c){
         echo 'Ошибка';
+    } else if (($a > $b && $a < $c) || ($a < $b && $a > $c)){
+        echo $a;
+    } else if (($b > $a && $b < $c) || ($b < $a && $b > $c)){
+        echo $b;
     } else{
-        echo ($a + $b + $c) / 3;
+        echo $c;
     }
 
     echo "<br>";
